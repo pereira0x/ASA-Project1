@@ -13,12 +13,12 @@ No exemplo ilustrado na Figura 1, existem 4 configurações possíveis para ladr
 questão. Uma configuração apenas utliza ladrilhos com dimensão 1×1, sendo que as restantes
 três utilizam ladrilhos com dimensões 1×1 e 2×2.
 
-![Exemplo 1](./images/asa1.png "Figura 1")
+Exemplo 1
 ```
 Figura 1: Exemplo de uma área a ladrilhar e respetivas configurações.
 ```
 
-![Exemplo 2](./images/asa2.png "Figura 2")
+Exemplo 2
 ```
 Figura 2: Especificação de um caminho em escada pelos valores ci, para n = 4 e m = 5.
 ```
@@ -52,7 +52,7 @@ ponderá ao número de configurações distintas de ladrilhos que permitem ladri
 questão. Considere que, para o caso em que o caminho em escada é definido por `ci = 0`, para
 `i = 1 , 2 ,...,n`, o número de configurações é 0.
 
-![Exemplo 3](./images/asa3.png "Figura 3")
+Exemplo 3
 
 ```
 Figura 3: Ilustração de todos os caminhos em escada possíveis para n = 3 e m = 3, com os respetivos valores de ci
