@@ -12,6 +12,7 @@ using namespace std;
 
 /* hashmap to store the results of the recursive calls (memoization) */
 unordered_map<long, long> combinations;
+int counter = 0;
 
 /* convert a vector to a long (example: <1,2,3,4> = 1234) */
 long arrayToLong(short cValues[], short nLines) {
@@ -62,7 +63,7 @@ long findCombinations(short cValues[], short nLines, short nColumns) {
   /* stop condition - if the biggest cValue is 1 */
   if (currColumn <= 1)
     return 1;
-
+  counter++;
   /* remove the different tiles available */
   long sum = 0;
   short newCValues[nLines];
@@ -103,6 +104,7 @@ int main() {
   /* if all c values are 0, there is no solution */
   res = allZero ? 0 : findCombinations(cValues, nLines, nColumns);
   printf("%ld\n", res);
+  printf("counter: %d\n", counter);
 
   return 0;
 }
